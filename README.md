@@ -6,7 +6,7 @@
 3. Movie data is located in path (`output/movies.json`)
    Please run following command to import `movies.json` file
    `mongoimport --db php --collection movies --jsonArray output/movies.json`
-4. If you want to use Postman postman collection to explore, please use `MWA.postman_collection.json` file.
+4. If you want to use Postman to explore the API, please import `MWA.postman_collection.json` file in your Postman.
 
 # Project assignment
 Personal Hobby Project for Modern Web Application
