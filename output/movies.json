@@ -1,0 +1,124 @@
+[{
+	"_id": {
+		"$oid": "6523507f64c210a26bbb8563"
+	},
+	"genre": [
+		"comedy",
+		"romance"
+	],
+	"name": "Elemental",
+	"releasedYear": 2023,
+	"characters": [
+		{
+			"_id": {
+				"$oid": "652350ea64c210a26bbb8566"
+			},
+			"name": "Ember",
+			"pictureUrl": "https://d23.com/app/uploads/2023/06/1180w-600h_062223_Elemental_Characters_02.jpg",
+			"actorName": "Leah Lewis",
+			"actorPictureUrl": "https://m.media-amazon.com/images/M/MV5BMzllNzNjM2ItNzI1MS00ZDk0LTg0ZmQtMDY2NWM4MjdkMzhhXkEyXkFqcGdeQXVyMjAzMTgxNjQ@._V1_QL75_UX280_CR0,24,280,280_.jpg"
+		},
+		{
+			"_id": {
+				"$oid": "6523512864c210a26bbb8569"
+			},
+			"name": "Wade",
+			"pictureUrl": "https://d23.com/app/uploads/2023/06/1180w-600h_062223_Elemental_Characters_03.jpg",
+			"actorName": "Mamoudou Athie",
+			"actorPictureUrl": "https://m.media-amazon.com/images/M/MV5BMjA1MzE2NTQ4OV5BMl5BanBnXkFtZTgwNDI5MzQ1NzM@._V1_QL75_UX280_CR0,0,280,280_.jpg"
+		},
+		{
+			"_id": {
+				"$oid": "652351ae64c210a26bbb8570"
+			},
+			"name": "Gale",
+			"pictureUrl": "https://d23.com/app/uploads/2023/06/1180w-600h_062223_Elemental_Characters_04.jpg",
+			"actorName": "Wendi McLendon-Covey",
+			"actorPictureUrl": "https://m.media-amazon.com/images/M/MV5BZjMwYjA0ZDEtOTMzZC00OTUwLWJkMGUtYWY4NDkzNDY5MWEyXkEyXkFqcGdeQXVyOTg2MjUwNQ@@._V1_QL75_UX280_CR0,0,280,280_.jpg"
+		}
+	],
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "652351fafe08a9a38d0ad611"
+	},
+	"genre": [
+		"comedy",
+		"adventure"
+	],
+	"name": "Soul",
+	"releasedYear": 2020,
+	"characters": [
+		{
+			"_id": {
+				"$oid": "6523523ffe08a9a38d0ad614"
+			},
+			"name": "Joe",
+			"pictureUrl": "https://d23.com/app/uploads/2020/12/780w-463h-122220_Meet-the-Characters-of-Soul-07.jpg",
+			"actorName": "Jamie Foxx",
+			"actorPictureUrl": "https://m.media-amazon.com/images/M/MV5BMTkyNjY1NDg3NF5BMl5BanBnXkFtZTgwNjA2MTg0MzE@._V1_QL75_UX280_CR0,0,280,280_.jpg"
+		},
+		{
+			"_id": {
+				"$oid": "6523526efe08a9a38d0ad617"
+			},
+			"name": "22",
+			"pictureUrl": "https://d23.com/app/uploads/2020/12/780w-463h-122220_Meet-the-Characters-of-Soul-06.jpg",
+			"actorName": "Tina Fey",
+			"actorPictureUrl": "https://m.media-amazon.com/images/M/MV5BNTJiOWYxMzQtNWZmYS00ZmNmLWE1ODktMGM3ZTkyYmE1YTBkXkEyXkFqcGdeQXVyMTAwOTg0NzU5._V1_QL75_UY280_CR6,0,280,280_.jpg"
+		},
+		{
+			"_id": {
+				"$oid": "65235294fe08a9a38d0ad61a"
+			},
+			"name": "Moonwind",
+			"pictureUrl": "https://d23.com/app/uploads/2020/12/780w-463h-122220_Meet-the-Characters-of-Soul-04.jpg",
+			"actorName": "Graham Norton",
+			"actorPictureUrl": "https://m.media-amazon.com/images/M/MV5BOTI0MTkzMzgwMF5BMl5BanBnXkFtZTYwNTYyMTA1._V1_QL75_UX280_CR0,7,280,280_.jpg"
+		}
+	],
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "652352edfe08a9a38d0ad61c"
+	},
+	"genre": [
+		"comedy",
+		"adventure"
+	],
+	"name": "Toy Story 4",
+	"releasedYear": 2019,
+	"characters": [
+		{
+			"_id": {
+				"$oid": "65235337fe08a9a38d0ad61f"
+			},
+			"name": "Gabby Gabby",
+			"pictureUrl": "https://d23.com/app/uploads/2019/06/780w-463h_060719_TS4-Meet-the-New-Characters-1.jpg",
+			"actorName": "Christina Hendricks",
+			"actorPictureUrl": "https://m.media-amazon.com/images/M/MV5BMjA5Njg3NDkxNV5BMl5BanBnXkFtZTgwNDczMTgyODE@._V1_QL75_UX280_CR0,1,280,280_.jpg"
+		},
+		{
+			"_id": {
+				"$oid": "6523536bfe08a9a38d0ad622"
+			},
+			"name": "Giggle McDimples",
+			"pictureUrl": "https://d23.com/app/uploads/2019/06/780w-463h_060719_TS4-Meet-the-New-Characters-4.jpg",
+			"actorName": "Ally Maki",
+			"actorPictureUrl": "https://m.media-amazon.com/images/M/MV5BMzQ3NGE4MGMtNjM3ZS00ZWUwLThlOTUtYjU2ZTc1Yjg3NDE0XkEyXkFqcGdeQXVyMTM0NTgwNzc@._V1_QL75_UY280_CR20,0,280,280_.jpg"
+		},
+		{
+			"_id": {
+				"$oid": "652353adfe08a9a38d0ad625"
+			},
+			"name": "Forky",
+			"pictureUrl": "https://d23.com/app/uploads/2019/06/780w-463h_060719_TS4-Meet-the-New-Characters-8.jpg",
+			"actorName": "Tony Hale",
+			"actorPictureUrl": "https://m.media-amazon.com/images/M/MV5BOGE2YWM1MjQtODBlMS00ZjVmLTg2YzEtZjk0ZDdmMjRlMDRhXkEyXkFqcGdeQXVyMTI2Nzk2ODk3._V1_QL75_UY280_CR3,0,280,280_.jpg"
+		}
+	],
+	"__v": 0
+}]
+
