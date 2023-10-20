@@ -3,7 +3,6 @@ const constant = require("./constant")
 
 const { errors } = require("../error-handler");
 const Characters = mongoose.model(constant.CHARACTER_SCHEMA_NAME);
-const Movies = mongoose.model(constant.MOVIE_SCHEMA_NAME);
 
 function checkIfMovieIsNull(movie) {
     return new Promise((resolve, reject) => {
@@ -19,7 +18,6 @@ function deleteCharacterFromMovie(movie, character) {
     character.deleteOne();
     return Promise.resolve(movie);
 }
-
 
 function checkIfCharacterExists(movie, characterId) {
     return new Promise((resolve, reject) => {
@@ -42,7 +40,6 @@ function checkIfRequestBodyIsEmpty(req) {
         }
     })
 }
-
 
 function checkIfMovieIsDeleted(result) {
     return new Promise((resolve, reject) => {
@@ -86,7 +83,6 @@ function fullFillCharacterFromRequestBody(movie, character, req) {
     return Promise.resolve({ movie, character });
 }
 
-
 function partialFillCharacterFromRequestBody(movie, character, req) {
     if (req.body.name) {
         character.name = req.body.name;
@@ -106,7 +102,6 @@ function partialFillCharacterFromRequestBody(movie, character, req) {
     return Promise.resolve({ movie, character });
 }
 
-
 function fullFillMovieFromRequestBody(movie, req) {
     movie.name = req.body.name;
     movie.releasedYear = req.body.releasedYear;
@@ -114,7 +109,6 @@ function fullFillMovieFromRequestBody(movie, req) {
 
     return Promise.resolve(movie);
 }
-
 
 function partialFillMovieFromRequestBody(movie, req) {
     if (req.body.name) {
@@ -153,3 +147,4 @@ module.exports = {
     checkIfMovieIsDeleted,
     deleteCharacterFromMovie
 }
+
