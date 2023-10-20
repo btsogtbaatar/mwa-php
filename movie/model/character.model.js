@@ -1,5 +1,7 @@
 const mongoose = require("mongoose");
 
+const constant = require("../constant");
+
 const charactersSchema = mongoose.Schema({
   name: {
     type: String,
@@ -19,6 +21,6 @@ const charactersSchema = mongoose.Schema({
   },
 });
 
-mongoose.model("Characters", charactersSchema, "characters");
+mongoose.model(constant.CHARACTER_SCHEMA_NAME, charactersSchema, process.env.CHARACTER_COLLECTION_NAME);
 
 module.exports = charactersSchema;

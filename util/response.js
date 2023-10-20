@@ -1,13 +1,10 @@
 const StatusCodes = require("http-status-codes").StatusCodes;
-function success(message, res, status = StatusCodes.OK) {
-  res.status(status).json(message);
+function success(res, body, status = StatusCodes.OK) {
+  res.status(status).json(body);
 }
 
-function error(error, res) {
-  res.status(error.status).json({
-    message: error.message,
-    details: error.details,
-  });
+function error(res, error) {
+  res.status(error.status).json(error.body);
 }
 
 module.exports = {

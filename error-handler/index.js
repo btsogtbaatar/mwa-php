@@ -1,34 +1,34 @@
-const StatusCodes = require("http-status-codes").StatusCodes;
-const response = require("../util").response;
-const customErrorErrorHandler = require("./custom.error-handler");
+const { response } = require("../util");
 const validationErrorHandler = require("./validation.error-handler");
-const castingErrorHandler = require("./casting.error-handler");
+const castErrorHandler = require("./cast.error-handler");
+const errors = require("./errors");
+const constant = require("../constant");
 
 const errorHandling = function (err, req, res, next) {
-  console.error(req.url, req.method);
-  console.error(err);
+  console.info(req.url, req.method);
+  console.error("Error:", err);
 
-  let error = {
-    status: StatusCodes.INTERNAL_SERVER_ERROR,
-    message: "Internal Server Error.",
-    details: {},
-  };
+  let error = errors.INTERNAL_SERVER_ERROR
 
   switch (err.name) {
-    case "ValidationError":
+    case constant.VALIDATION_ERROR_NAME:
       error = validationErrorHandler(err);
       break;
-    case "CustomError":
-      error = customErrorErrorHandler(err);
+    case constant.CUSTOM_ERROR_NAME:
+      error = err;
       break;
-    case "CastError":
-      error = castingErrorHandler(err);
+    case constant.CAST_ERROR_NAME:
+      error = castErrorHandler(err);
       break;
     default:
       break;
   }
 
-  response.error(error, res);
+  response.error(res, error);
+  next();
 };
 
-module.exports = errorHandling;
+module.exports = {
+  errorHandling,
+  errors
+};
