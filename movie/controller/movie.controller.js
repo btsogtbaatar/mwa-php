@@ -15,7 +15,7 @@ function getAll(req, res, next) {
     return next(errors.INVALID_OFFSET_AND_COUNT);
   }
 
-  if (count > process.env.MAX_COUNT) {
+  if (count > parseInt(process.env.MAX_COUNT, 10)) {
     return next(errors.MAX_COUNT_EXCEEDED);
   }
 

@@ -1,0 +1,29 @@
+<div class="container-fluid">
+  <h4>Animated movies</h4>
+  <table class="table table-striped mt-2">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Released Year</th>
+        <th>Genre</th>
+        <th>Operation</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let movie of movies">
+        <td>{{ movie.name }}</td>
+        <td>{{ movie.releasedYear }}</td>
+        <td>{{ movie.genre.join(", ") }}</td>
+        <td>
+          <button class="btn btn-link p-0" routerLink="{{ movie._id }}">
+            Edit
+          </button>
+          |
+          <button class="btn btn-link p-0" (click)="onDelete(movie)">
+            Delete
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

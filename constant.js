@@ -10,5 +10,8 @@ module.exports = {
     EXPRESS_STARTED_MESSAGE: "Express server started on port:",
     VALIDATION_ERROR_NAME: "ValidationError",
     CUSTOM_ERROR_NAME: "CustomError",
-    CAST_ERROR_NAME: "CastError"
+    CAST_ERROR_NAME: "CastError",
+    CORS_ORIGIN_HEADER: "Access-Control-Allow-Origin",
+    CORS_METHODS_HEADER: "Access-Control-Allow-Methods",
+    CORS_HEADERS_HEADER: "Access-Control-Allow-Headers"
 }

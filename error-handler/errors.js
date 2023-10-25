@@ -32,7 +32,7 @@ module.exports = {
   },
   MAX_COUNT_EXCEEDED: {
     name: constant.CUSTOM_ERROR_NAME,
-    status: StatusCodes.NOT_FOUND,
+    status: StatusCodes.BAD_REQUEST,
     body: {
       message: "Max count exceeded.",
       details: {
